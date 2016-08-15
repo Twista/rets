@@ -1,4 +1,4 @@
-from distutils.core import setup
+from setuptools import setup
 
 setup(
     name='Rets',
@@ -8,6 +8,8 @@ setup(
     author='Autoprop',
     author_email='wimbersky@autoprop.ca',
     url='https://github.com/wetcoastdev/rets',
-    packages=['requests', 'xml'],
+    install_requires=[
+        'requests',
+    ],
     license='MIT',
 )
